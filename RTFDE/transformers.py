@@ -228,13 +228,13 @@ Discard index sub-entries. Because, we don't care about indexes when de-encapsul
             b'\\par': b'\n',
             b'\\tab': b'\t',
             b'\\line': b'\n',
-            b'\\lquote': b'\u2018',
-            b'\\rquote': b'\u2019',
-            b'\\ldblquote': b'\u201C',
-            b'\\rdblquote': b'\u201D',
-            b'\\bullet': b'\u2022',
-            b'\\endash': b'\u2013',
-            b'\\emdash': b'\u2014'
+            b'\\lquote': '\u2018'.encode(),
+            b'\\rquote': '\u2019'.encode(),
+            b'\\ldblquote': '\u201C'.encode(),
+            b'\\rdblquote': '\u201D'.encode(),
+            b'\\bullet': '\u2022'.encode(),
+            b'\\endash': '\u2013'.encode(),
+            b'\\emdash': '\u2014'.encode(),
         }
         replacement = words.get(args.value, None)
         # If this is simply a character to replace then return the value as a string
